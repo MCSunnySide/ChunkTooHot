@@ -1,0 +1,4 @@
+name: ChunkTooHot
+version: ${project.version}
+main: com.mcsunnyside.chunktoohot.ChunkTooHot
+api-version: 1.15.2
