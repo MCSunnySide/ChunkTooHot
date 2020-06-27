@@ -20,6 +20,7 @@ public final class ChunkTooHot extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        saveDefaultConfig();
         chunkHotMap = CacheBuilder.newBuilder().expireAfterWrite(getConfig().getLong("hotexpire"), TimeUnit.MILLISECONDS).build();
         limit = getConfig().getInt("hotlimit");
         Bukkit.getPluginManager().registerEvents(this,this);
